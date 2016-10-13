@@ -4,6 +4,7 @@
 * [Creating a Slider](#creating-a-slider)
 * [Settings](#settings)
 * [Component](#component)
+* [Frontend Examples](#front-end-examples)
 * [Built with Slick Slider](#built-with-slick-slider)
 
 ## Installation
@@ -28,9 +29,23 @@ A full list and description of settings can be found here: [http://kenwheeler.gi
 
 ## Component
 Slider component can be dragged into a page from the "CMS" tab. User can then choose what slideshow to display.
-![Responsive Breakpoints](/assets/screens/component.png)
+![Component](/assets/screens/component.png)
 
 Components can also be added to a page with `{% component 'slider' slide_show_id = id %}` by replacing the "id" with our slideshow ID
+
+##Frontend Examples
+
+#### Full Width Image
+![Full Width Image](/assets/screens/single-slide.png)
+
+#### Multiple Images
+![Multiple Images](/assets/screens/multiple-slides.png)
+
+#### Grid Mode
+![Multiple Images](/assets/screens/grid-mode.png)
+
+#### Mobile
+![Multiple Images](/assets/screens/mobile.png)
 
 ## Built with Slick Slider
 Huge thanks to Ken Wheeler for creating the incredible Slick Slider. Full documentation for slick slider can be found here: [http://kenwheeler.github.io/slick/](http://kenwheeler.github.io/slick/)
