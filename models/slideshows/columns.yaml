@@ -1,0 +1,11 @@
+columns:
+    slide_show_title:
+        label: 'peterhegman.slickslider::lang.slickslider.title'
+        type: text
+        searchable: true
+        sortable: true
+    id:
+        label: 'peterhegman.slickslider::lang.slickslider.id'
+        type: number
+        searchable: true
+        sortable: true

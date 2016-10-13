@@ -1,0 +1,17 @@
+plugin:
+    name: 'peterhegman.slickslider::lang.plugin.name'
+    description: 'Easily create responsive slide shows from the backend and insert them as a component. Supports multiple rows, multiple images per slide, and responsive breakpoints. Built using Ken Wheeler''s Slick Slider (http://kenwheeler.github.io/slick/)'
+    author: 'Peter Hegman'
+    icon: oc-icon-image
+    homepage: ''
+permissions:
+    peterhegman.slickslider.manage_slide_shows:
+        tab: 'peterhegman.slickslider::lang.plugin.name'
+        label: 'peterhegman.slickslider::lang.slickslider.manage_slide_shows'
+navigation:
+    slide_shows:
+        label: 'peterhegman.slickslider::lang.slickslider.slide_shows'
+        url: peterhegman/slickslider/slideshows
+        icon: icon-image
+        permissions:
+            - peterhegman.slickslider.manage_slide_shows

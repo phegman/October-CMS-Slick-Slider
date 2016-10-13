@@ -1,0 +1,10 @@
+name: SlideShows
+modelClass: PeterHegman\SlickSlider\Models\SlideShows
+form: $/peterhegman/slickslider/models/slideshows/fields.yaml
+defaultRedirect: peterhegman/slickslider/slideshows
+create:
+    redirect: 'peterhegman/slickslider/slideshows/update/:id'
+    redirectClose: peterhegman/slickslider/slideshows
+update:
+    redirect: peterhegman/slickslider/slideshows
+    redirectClose: peterhegman/slickslider/slideshows
