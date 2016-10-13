@@ -4,7 +4,7 @@
 * [Creating a Slider](#creating-a-slider)
 * [Settings](#settings)
 * [Component](#component)
-* [Frontend Examples](#front-end-examples)
+* [Frontend Examples](#frontend-examples)
 * [Built with Slick Slider](#built-with-slick-slider)
 
 ## Installation
