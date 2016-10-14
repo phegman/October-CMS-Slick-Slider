@@ -11,7 +11,7 @@
 Create a folder named peterhegman in your /plugins directory. Drop slickslider into this folder. In your terminal run `php artisan october:up`
 ## Creating a Slider
 After installation choose "Slide Shows" from the main menu.
-Choose "Create" and then choose a title for the slide show and add as many slides as you would like. Slides can be added, delted, and rearanged. Slide description and title can also be added.
+Choose "Create" and then choose a title for the slide show and add as many slides as you would like. Slides can be added, deleted, and rearranged. Slide description and title can also be added.
 ![Toggle Options](/assets/screens/slides.png)
 ## Settings
 Settings can be accessed from the "Settings" tab after creating a slider.
