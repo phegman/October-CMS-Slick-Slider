@@ -1,7 +1,9 @@
-<?php return [
+<?php
+
+return [
     'plugin' => [
         'name' => 'Slick Slider',
-        'description' => '',
+        'description' => 'Easily create responsive slide shows from the backend and insert them as a component.'
     ],
     'slickslider' => [
         'title' => 'Slide Show Title',
@@ -103,6 +105,6 @@
         'toggle_options' => 'Toggle Options',
         'options' => 'Options',
         'breakpoints' => 'Break Points',
-        'id' => 'Slide Show ID',
-    ],
+        'id' => 'Slide Show ID'
+    ]
 ];
