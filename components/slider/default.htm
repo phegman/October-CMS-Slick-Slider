@@ -88,7 +88,7 @@
 <div class="slick-slider-{{slider.slides.slideShows.id}}">
 	{% for slide in slider.slides.slideShows.slide_show_content %}
 		<div>
-	        <div class="slide-image" style="background-image: url( {{slide.slide_image|media}} ); background-position: 50% {{slide.image_position ?: 50}}%;">
+	        <div class="slide-image" style="background-image: url( '{{slide.slide_image|media}}' ); background-position: 50% {{slide.image_position ?: 50}}%;">
 	        	{% if (slide.slide_title or slide.slide_description) %}
         		<div class="slide-content">
         			<h1>{{slide.slide_title}}</h1>
