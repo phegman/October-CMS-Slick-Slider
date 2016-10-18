@@ -9,6 +9,7 @@
 
 ## Installation
 Create a folder named peterhegman in your /plugins directory. Drop slickslider into this folder. In your terminal run `php artisan october:up`
+Note: Make sure the plugin folder is named "slickslider"
 
 ## Creating a Slider
 After installation choose "Slideshows" from the main menu.
@@ -34,6 +35,19 @@ Slider component can be dragged into a page from the "CMS" tab. User can then ch
 ![Component](/assets/screens/component.png)
 
 Components can also be added to a page with `{% component 'slider' slide_show_id = id %}` by replacing the "id" with our slideshow ID
+
+Note: The [slider] tag must be in the head of the page for example: 
+
+```
+title = "Slide show"
+url = "/slide-show"
+layout = "default"
+is_hidden = 0
+
+[slider]
+==
+{% component 'slider' slide_show_id = 2 %}
+```
 
 ## Front-end Examples
 
