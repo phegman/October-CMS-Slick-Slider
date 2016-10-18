@@ -11,8 +11,8 @@
 Create a folder named peterhegman in your /plugins directory. Drop slickslider into this folder. In your terminal run `php artisan october:up`
 
 ## Creating a Slider
-After installation choose "Slide Shows" from the main menu.
-Choose "Create" and then choose a title for the slide show and add as many slides as you would like. Slides can be added, deleted, and rearranged. Slide description and title can also be added.
+After installation choose "Slideshows" from the main menu.
+Choose "Create" and then choose a title for the slideshow and add as many slides as you would like. Slides can be added, deleted, and rearranged. Slide description and title can also be added.
 ![Toggle Options](/assets/screens/slides.png)
 
 ## Settings
@@ -30,10 +30,10 @@ A full list and description of settings can be found here: [http://kenwheeler.gi
 ![Responsive Breakpoints](/assets/screens/responsive-breakpoints.png)
 
 ## Component
-Slider component can be dragged into a page from the "CMS" tab. User can then choose what slide show to display.
+Slider component can be dragged into a page from the "CMS" tab. User can then choose what slideshow to display.
 ![Component](/assets/screens/component.png)
 
-Components can also be added to a page with `{% component 'slider' slide_show_id = id %}` by replacing the "id" with our slide show ID
+Components can also be added to a page with `{% component 'slider' slide_show_id = id %}` by replacing the "id" with our slideshow ID
 
 ## Front-end Examples
 

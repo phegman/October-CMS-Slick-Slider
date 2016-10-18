@@ -3,18 +3,18 @@
 return [
     'plugin' => [
         'name' => 'Slick Slider',
-        'description' => 'Easily create responsive slide shows from the backend and insert them as a component.'
+        'description' => 'Easily create responsive slideshows from the backend and insert them as a component.'
     ],
     'slickslider' => [
-        'title' => 'Slide Show Title',
+        'title' => 'Slideshow Title',
         'slides' => 'Slides',
         'image' => 'Image',
         'slide_title' => 'Slide Title',
         'slide_description' => 'Slide Description',
-        'manage_slide_shows' => 'Manage Slide Shows',
-        'slide_shows' => 'Slide Shows',
+        'manage_slide_shows' => 'Manage Slideshows',
+        'slide_shows' => 'Slideshows',
         'settings' => 'Settings',
-        'slide_show_height' => 'Slide Show Height',
+        'slide_show_height' => 'Slideshow Height',
         'autoplay' => 'Auto Play',
         'slide_image' => 'Slide Image',
         'accessibility' => 'Accessibility',
@@ -105,6 +105,6 @@ return [
         'toggle_options' => 'Toggle Options',
         'options' => 'Options',
         'breakpoints' => 'Break Points',
-        'id' => 'Slide Show ID'
+        'id' => 'Slideshow ID'
     ]
 ];

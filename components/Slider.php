@@ -23,7 +23,7 @@ class Slider extends \Cms\Classes\ComponentBase
             }
             return [
                 'slide_show_id' => [
-                    'title'       => 'Slide Show',
+                    'title'       => 'Slideshow',
                     'type'        => 'dropdown',
                     'default'     => $slideShows->first()->attributes['id'],
                     'placeholder' => 'Select units',
