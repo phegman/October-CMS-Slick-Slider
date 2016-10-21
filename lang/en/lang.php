@@ -1,9 +1,7 @@
-<?php
-
-return [
+<?php return [
     'plugin' => [
         'name' => 'Slick Slider',
-        'description' => 'Easily create responsive slideshows from the backend and insert them as a component.'
+        'description' => 'Easily create responsive slideshows from the backend and insert them as a component.',
     ],
     'slickslider' => [
         'title' => 'Slideshow Title',
@@ -98,13 +96,17 @@ return [
         'z_index_desc' => 'Set the zIndex values for slides, useful for IE9 and lower',
         'z_index' => 'z-index',
         'slide_show_height_desc' => 'Height in px, vh, vw, or %',
-        'image_position' => 'Image Position',
+        'image_position' => 'Image Vertical Position',
         'responsive' => 'Responsive Break Points',
         'breakpoint' => 'Breakpoint',
         'breakpoint_desc' => 'In Pixels (px)',
         'toggle_options' => 'Toggle Options',
         'options' => 'Options',
         'breakpoints' => 'Break Points',
-        'id' => 'Slideshow ID'
-    ]
+        'id' => 'Slideshow ID',
+        'include_jquery' => 'Include jQuery',
+        'include_jquery_desc' => 'This plugin requires jQuery to work properly. If you do not have jQuery already in your theme then turn this on',
+        'slide_link' => 'Slide Link',
+        'image_horizontal_position' => 'Image Horizontal Position',
+    ],
 ];

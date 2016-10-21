@@ -47,7 +47,11 @@ class Slider extends \Cms\Classes\ComponentBase
 
     public function onRun()
     {
-        $this->addJs('assets/jquery-3.1.1.min.js');
+        $slideShowId = $this->property('slide_show_id');
+        $slideShows = SlideShows::where('id', '=', $slideShowId)->first();
+        if (count($slideShows) > 0 && $slideShows->attributes['include_jquery']) {
+            $this->addJs('assets/jquery-3.1.1.min.js');
+        }
         $this->addJs('assets/slick/slick.min.js');
         $this->addCss('assets/slick/slick.css');
         $this->addCss('assets/slick/slick-theme.css');
@@ -59,7 +63,6 @@ class Slider extends \Cms\Classes\ComponentBase
         $slideShowId = $this->property('slide_show_id');
         $slideShows = SlideShows::where('id', '=', $slideShowId)->first();
         if (count($slideShows) > 0) {
-            Log::debug(count($slideShows));
             $breakpoints = json_decode($slideShows->attributes['responsive']);
             //Create Responsive Array
             $breakpointArray = array();

@@ -1,6 +1,7 @@
 # October CMS Slick Slider Plugin
 
 * [Installation](#installation)
+* [Dependencies](#dependencies)
 * [Creating a Slider](#creating-a-slider)
 * [Settings](#settings)
 * [Component](#component)
@@ -10,6 +11,9 @@
 ## Installation
 Create a folder named peterhegman in your /plugins directory. Drop slickslider into this folder. In your terminal run `php artisan october:up`
 Note: Make sure the plugin folder is named "slickslider"
+
+## Dependencies
+This plugin requires jQuery 1.7 +. By default the plugin includes jQuery 3.1.1, but if your theme already include jQuery you may want to turn it off in the settings tab of your slideshow. 
 
 ## Creating a Slider
 After installation choose "Slideshows" from the main menu.

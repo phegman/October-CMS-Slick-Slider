@@ -1,3 +1,4 @@
+fields:
 tabs:
     fields:
         slide_show_title:
@@ -20,6 +21,10 @@ tabs:
                         type: mediafinder
                     slide_title:
                         label: 'peterhegman.slickslider::lang.slickslider.slide_title'
+                        span: auto
+                        type: text
+                    slide_link:
+                        label: 'peterhegman.slickslider::lang.slickslider.slide_link'
                         span: right
                         type: text
                     slide_description:
@@ -36,6 +41,16 @@ tabs:
                             75: 'Show Bottom Middle'
                             100: 'Show Bottom'
                         span: right
+                        type: radio
+                    image_horizontal_position:
+                        label: 'peterhegman.slickslider::lang.slickslider.image_horizontal_position'
+                        span: right
+                        options:
+                            0: 'Show Left'
+                            25: 'Show Left Middle'
+                            50: 'Show Middle'
+                            75: 'Show Right Middle'
+                            100: 'Show Right'
                         type: radio
         settings1:
             label: 'peterhegman.slickslider::lang.slickslider.toggle_options'
@@ -179,6 +194,13 @@ tabs:
             default: 1
             type: switch
             comment: 'peterhegman.slickslider::lang.slickslider.wait_for_animate_desc'
+            tab: 'peterhegman.slickslider::lang.slickslider.settings'
+        include_jquery:
+            label: 'peterhegman.slickslider::lang.slickslider.include_jquery'
+            span: auto
+            default: 1
+            type: switch
+            comment: 'peterhegman.slickslider::lang.slickslider.include_jquery_desc'
             tab: 'peterhegman.slickslider::lang.slickslider.settings'
         settings2:
             label: 'peterhegman.slickslider::lang.slickslider.options'

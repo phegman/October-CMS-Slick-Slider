@@ -58,6 +58,9 @@
     	.slick-slider-{{slider.slides.slideShows.id}} .slick-slide > div > div {
     		float: left!important;
     	}
+    	.slick-slider-{{slider.slides.slideShows.id}} .slick-slide > div > a {
+    		float: left!important;
+    	}
     	.slick-slider-{{slider.slides.slideShows.id}} .slick-slide .slide-image {
     		min-height: {{slider.slides.slideShows.slide_show_height ?: '500px'}};
     		position: relative;
@@ -80,7 +83,7 @@
 
     		@media (max-width: {{breakpoint.breakpoint}}px) {
 		    	.slick-slider-{{slider.slides.slideShows.id}} .slick-slide .slide-image {
-		    		min-height: {{breakpoint.responsive_slide_show_height}};
+		    		min-height: {{breakpoint.responsive_slide_show_height ?: '500px'}};
 		    	}
     		}
 
@@ -89,16 +92,29 @@
 {% endput %}
 <div class="slick-slider-{{slider.slides.slideShows.id}}">
 	{% for slide in slider.slides.slideShows.slide_show_content %}
-		<div>
-	        <div class="slide-image" style="background-image: url( '{{slide.slide_image|media}}' ); background-position: 50% {{slide.image_position ?: 50}}%;">
-	        	{% if (slide.slide_title or slide.slide_description) %}
-        		<div class="slide-content">
-        			<h1>{{slide.slide_title}}</h1>
-        			<p>{{slide.slide_description}}</p>
-    			</div>
-	        	{% endif %}
+		{% if slide.slide_link != '' %}
+			<a href="{{slide.slide_link}}" class="slide">
+		        <div class="slide-image" style="background-image: url( '{{slide.slide_image|media}}' ); background-position: {{slide.image_horizontal_position}}% {{slide.image_position}}%;">
+		        	{% if (slide.slide_title or slide.slide_description) %}
+	        		<div class="slide-content">
+	        			<h1>{{slide.slide_title}}</h1>
+	        			<p>{{slide.slide_description}}</p>
+	    			</div>
+		        	{% endif %}
+		        </div>
+	        </a>
+        {% else %}
+        	<div class="slide">
+		        <div class="slide-image" style="background-image: url( '{{slide.slide_image|media}}' ); background-position: {{slide.image_horizontal_position}}% {{slide.image_position}}%;">
+		        	{% if (slide.slide_title or slide.slide_description) %}
+	        		<div class="slide-content">
+	        			<h1>{{slide.slide_title}}</h1>
+	        			<p>{{slide.slide_description}}</p>
+	    			</div>
+		        	{% endif %}
+		        </div>
 	        </div>
-        </div>
+        {% endif %}
     {% endfor %}
 </div>
 {% endif %}
