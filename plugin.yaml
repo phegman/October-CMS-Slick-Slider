@@ -8,6 +8,12 @@ permissions:
     peterhegman.slickslider.manage_slide_shows:
         tab: 'peterhegman.slickslider::lang.plugin.name'
         label: 'peterhegman.slickslider::lang.slickslider.manage_slide_shows'
+    peterhegman.slickslider.manage_slides:
+        tab: 'peterhegman.slickslider::lang.plugin.name'
+        label: 'peterhegman.slickslider::lang.slickslider.manage_slides'
+    peterhegman.slickslider.create_slide_shows:
+        tab: 'peterhegman.slickslider::lang.plugin.name'
+        label: 'peterhegman.slickslider::lang.slickslider.create_slide_shows_label'
 navigation:
     slide_shows:
         label: 'peterhegman.slickslider::lang.slickslider.slide_shows'
@@ -15,3 +21,4 @@ navigation:
         icon: icon-image
         permissions:
             - peterhegman.slickslider.manage_slide_shows
+            - peterhegman.slickslider.manage_slides

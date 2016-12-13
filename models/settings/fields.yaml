@@ -1,0 +1,305 @@
+fields:
+    settings1:
+        label: 'peterhegman.slickslider::lang.slickslider.toggle_options'
+        span: full
+        type: section
+    autoplay:
+        label: 'peterhegman.slickslider::lang.slickslider.autoplay'
+        span: auto
+        default: 0
+        type: switch
+        comment: 'peterhegman.slickslider::lang.slickslider.autoplay_desc'
+    accessibility:
+        label: 'peterhegman.slickslider::lang.slickslider.accessibility'
+        span: auto
+        default: 1
+        type: switch
+        comment: 'peterhegman.slickslider::lang.slickslider.accessibility_desc'
+    arrows:
+        label: 'peterhegman.slickslider::lang.slickslider.arrows'
+        span: auto
+        default: 1
+        type: switch
+    adaptive_height:
+        label: 'peterhegman.slickslider::lang.slickslider.adaptive_height'
+        span: auto
+        type: switch
+        comment: 'peterhegman.slickslider::lang.slickslider.adaptive_height_desc'
+    center_mode:
+        label: 'peterhegman.slickslider::lang.slickslider.center_mode'
+        span: auto
+        type: switch
+        comment: 'peterhegman.slickslider::lang.slickslider.center_mode_desc'
+    dots:
+        label: 'peterhegman.slickslider::lang.slickslider.dots'
+        span: auto
+        type: switch
+        comment: 'peterhegman.slickslider::lang.slickslider.dots_desc'
+    draggable:
+        label: 'peterhegman.slickslider::lang.slickslider.draggable'
+        span: auto
+        default: 1
+        type: switch
+        comment: 'peterhegman.slickslider::lang.slickslider.enables_draggable'
+    fade:
+        label: 'peterhegman.slickslider::lang.slickslider.fade'
+        span: auto
+        type: switch
+        comment: 'peterhegman.slickslider::lang.slickslider.fade_desc'
+    focus_on_select:
+        label: 'peterhegman.slickslider::lang.slickslider.focus_on_select'
+        span: auto
+        type: switch
+        comment: 'peterhegman.slickslider::lang.slickslider.focus_on_select_desc'
+    pause_on_focus:
+        label: 'peterhegman.slickslider::lang.slickslider.pause_on_focus'
+        span: auto
+        default: 1
+        type: switch
+        comment: 'peterhegman.slickslider::lang.slickslider.pause_on_focus_desc'
+    pause_on_dots_hover:
+        label: 'peterhegman.slickslider::lang.slickslider.pause_on_dots_hover'
+        span: auto
+        default: 1
+        type: switch
+        comment: 'peterhegman.slickslider::lang.slickslider.pause_on_dots_hover_desc'
+    pause_on_hover:
+        label: 'peterhegman.slickslider::lang.slickslider.pause_on_hover'
+        span: auto
+        default: 1
+        type: switch
+        comment: 'peterhegman.slickslider::lang.slickslider.pause_on_hover_desc'
+    infinite:
+        label: 'peterhegman.slickslider::lang.slickslider.infinite'
+        span: auto
+        default: 1
+        type: switch
+        comment: 'peterhegman.slickslider::lang.slickslider.infinite_desc'
+    swipe:
+        label: 'peterhegman.slickslider::lang.slickslider.swipe'
+        span: auto
+        default: 1
+        type: switch
+        comment: 'peterhegman.slickslider::lang.slickslider.swipe_desc'
+    touch_move:
+        label: 'peterhegman.slickslider::lang.slickslider.touch_move'
+        span: auto
+        default: 1
+        type: switch
+        comment: 'peterhegman.slickslider::lang.slickslider.touch_move_desc'
+    use_transform:
+        label: 'peterhegman.slickslider::lang.slickslider.use_transform'
+        span: auto
+        default: 1
+        type: switch
+        comment: 'peterhegman.slickslider::lang.slickslider.use_transform_desc'
+    use_css:
+        label: 'peterhegman.slickslider::lang.slickslider.use_css'
+        span: auto
+        default: 1
+        type: switch
+        comment: 'peterhegman.slickslider::lang.slickslider.use_css_desc'
+    vertical:
+        label: 'peterhegman.slickslider::lang.slickslider.vertical'
+        span: auto
+        type: switch
+        comment: 'peterhegman.slickslider::lang.slickslider.vertical_desc'
+    vertical_swiping:
+        label: 'peterhegman.slickslider::lang.slickslider.vertical_swiping'
+        span: auto
+        type: switch
+        comment: 'peterhegman.slickslider::lang.slickslider.vertical_swiping_desc'
+    rtl:
+        label: 'peterhegman.slickslider::lang.slickslider.rtl'
+        span: auto
+        type: switch
+        comment: 'peterhegman.slickslider::lang.slickslider.rtl_desc'
+    wait_for_animate:
+        label: 'peterhegman.slickslider::lang.slickslider.wait_for_animage'
+        span: auto
+        default: 1
+        type: switch
+        comment: 'peterhegman.slickslider::lang.slickslider.wait_for_animate_desc'
+    include_jquery:
+        label: 'peterhegman.slickslider::lang.slickslider.include_jquery'
+        span: auto
+        default: 1
+        type: switch
+        comment: 'peterhegman.slickslider::lang.slickslider.include_jquery_desc'
+    settings2:
+        label: 'peterhegman.slickslider::lang.slickslider.options'
+        span: full
+        type: section
+    autoplay_speed:
+        label: 'peterhegman.slickslider::lang.slickslider.autoplay_speed'
+        span: auto
+        placeholder: '3000'
+        default: '3000'
+        type: number
+        commentAbove: 'peterhegman.slickslider::lang.slickslider.autoplay_speed_desc'
+    slide_show_height:
+        label: 'peterhegman.slickslider::lang.slickslider.slide_show_height'
+        span: auto
+        placeholder: 500px
+        default: 500px
+        type: text
+        commentAbove: 'peterhegman.slickslider::lang.slickslider.slide_show_height_desc'
+    prev_arrow:
+        label: 'peterhegman.slickslider::lang.slickslider.prev_arrow'
+        size: small
+        span: auto
+        placeholder: '<button type="button" class="slick-prev">Previous</button>'
+        default: '<button type="button" class="slick-prev">Previous</button>'
+        type: textarea
+        commentAbove: 'peterhegman.slickslider::lang.slickslider.prev_arrow_desc'
+    next_arrow:
+        label: 'peterhegman.slickslider::lang.slickslider.next_arrow'
+        size: small
+        span: auto
+        placeholder: '<button type="button" class="slick-next">Next</button>'
+        default: '<button type="button" class="slick-next">Next</button>'
+        type: textarea
+        commentAbove: 'peterhegman.slickslider::lang.slickslider.next_arrow_desc'
+    center_padding:
+        label: 'peterhegman.slickslider::lang.slickslider.center_padding'
+        span: left
+        placeholder: 50px
+        default: 50px
+        type: text
+        commentAbove: 'peterhegman.slickslider::lang.slickslider.center_padding_desc'
+    css_ease:
+        label: 'peterhegman.slickslider::lang.slickslider.css_ease'
+        span: auto
+        placeholder: ease
+        default: ease
+        type: text
+        commentAbove: 'peterhegman.slickslider::lang.slickslider.css_ease_desc'
+    easing:
+        label: 'peterhegman.slickslider::lang.slickslider.easing'
+        span: auto
+        placeholder: linear
+        default: linear
+        type: text
+        commentAbove: 'peterhegman.slickslider::lang.slickslider.easing_desc'
+    edge_friction:
+        label: 'peterhegman.slickslider::lang.slickslider.edge_friction'
+        span: auto
+        placeholder: '0.15'
+        default: '0.15'
+        type: number
+        commentAbove: 'peterhegman.slickslider::lang.slickslider.edge_friction_desc'
+    initial_slide:
+        label: 'peterhegman.slickslider::lang.slickslider.initial_slide'
+        span: auto
+        placeholder: '0'
+        default: '0'
+        type: number
+        commentAbove: 'peterhegman.slickslider::lang.slickslider.initial_slide_desc'
+    lazy_load:
+        label: 'peterhegman.slickslider::lang.slickslider.lazy_load'
+        span: auto
+        placeholder: ondemand
+        default: ondemand
+        type: text
+        commentAbove: 'peterhegman.slickslider::lang.slickslider.lazy_load_desc'
+    rows:
+        label: 'peterhegman.slickslider::lang.slickslider.rows'
+        span: auto
+        placeholder: '1'
+        default: '1'
+        type: number
+        commentAbove: 'peterhegman.slickslider::lang.slickslider.rows_desc'
+    slides_per_row:
+        label: 'peterhegman.slickslider::lang.slickslider.slides_per_row'
+        span: auto
+        placeholder: '1'
+        default: '1'
+        type: number
+        commentAbove: 'peterhegman.slickslider::lang.slickslider.slides_per_row_desc'
+    slides_to_show:
+        label: 'peterhegman.slickslider::lang.slickslider.slides_to_show'
+        span: auto
+        placeholder: '1'
+        default: '1'
+        type: number
+        commentAbove: 'peterhegman.slickslider::lang.slickslider.slides_to_show_desc'
+    slides_to_scroll:
+        label: 'peterhegman.slickslider::lang.slickslider.slides_to_scroll'
+        span: auto
+        placeholder: '1'
+        default: '1'
+        type: number
+        commentAbove: 'peterhegman.slickslider::lang.slickslider.slides_to_scroll_desc'
+    speed:
+        label: 'peterhegman.slickslider::lang.slickslider.speed'
+        span: auto
+        placeholder: '300'
+        default: '300'
+        type: number
+        commentAbove: 'peterhegman.slickslider::lang.slickslider.speed_desc'
+    touch_threshold:
+        label: 'peterhegman.slickslider::lang.slickslider.touch_threshold'
+        span: auto
+        placeholder: '5'
+        default: '5'
+        type: number
+        commentAbove: 'peterhegman.slickslider::lang.slickslider.touch_threshold_desc'
+    z_index:
+        label: 'peterhegman.slickslider::lang.slickslider.z_index'
+        span: auto
+        placeholder: '1000'
+        default: '1000'
+        type: number
+        commentAbove: 'peterhegman.slickslider::lang.slickslider.z_index_desc'
+    settings3:
+        label: 'peterhegman.slickslider::lang.slickslider.responsive'
+        span: full
+        type: section
+    responsive:
+        label: 'peterhegman.slickslider::lang.slickslider.breakpoints'
+        prompt: 'Add Break Point'
+        span: full
+        type: repeater
+        form:
+            fields:
+                breakpoint:
+                    label: 'peterhegman.slickslider::lang.slickslider.breakpoint'
+                    span: left
+                    required: 1
+                    type: number
+                    commentAbove: 'peterhegman.slickslider::lang.slickslider.breakpoint_desc'
+                responsive_slide_show_height:
+                    label: 'peterhegman.slickslider::lang.slickslider.slide_show_height'
+                    span: right
+                    placeholder: 500px
+                    default: 500px
+                    type: text
+                    commentAbove: 'peterhegman.slickslider::lang.slickslider.slide_show_height_desc'
+                responsive_rows:
+                    label: 'peterhegman.slickslider::lang.slickslider.rows'
+                    span: left
+                    placeholder: '1'
+                    default: '1'
+                    type: number
+                    commentAbove: 'peterhegman.slickslider::lang.slickslider.rows_desc'
+                responsive_slides_per_row:
+                    label: 'peterhegman.slickslider::lang.slickslider.slides_per_row'
+                    span: right
+                    placeholder: '1'
+                    default: '1'
+                    type: number
+                    commentAbove: 'peterhegman.slickslider::lang.slickslider.slides_per_row_desc'
+                responsive_slides_to_show:
+                    label: 'peterhegman.slickslider::lang.slickslider.slides_to_show'
+                    span: left
+                    placeholder: '1'
+                    default: '1'
+                    type: number
+                    commentAbove: 'peterhegman.slickslider::lang.slickslider.slides_to_show_desc'
+                responsive_slides_to_scroll:
+                    label: 'peterhegman.slickslider::lang.slickslider.slides_to_scroll'
+                    span: right
+                    placeholder: '1'
+                    default: '1'
+                    type: number
+                    commentAbove: 'peterhegman.slickslider::lang.slickslider.slides_to_scroll_desc'

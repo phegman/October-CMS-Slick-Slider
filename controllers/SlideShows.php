@@ -2,6 +2,7 @@
 
 use Backend\Classes\Controller;
 use BackendMenu;
+use BackendAuth;
 
 class SlideShows extends Controller
 {
@@ -11,8 +12,25 @@ class SlideShows extends Controller
     public $formConfig = 'config_form.yaml';
 
     public $requiredPermissions = [
-        'peterhegman.slickslider.manage_slide_shows'
+        'peterhegman.slickslider.*'
     ];
+
+    public function formExtendFields($form)
+    {
+        $backendUser = BackendAuth::getUser();
+        $isSuperUser = $backendUser->is_superuser;
+        $fieldsToRemove = $this->formGetWidget()
+        ->getTab('primary')
+        ->fields['peterhegman.slickslider::lang.slickslider.settings'];
+        //dd($fieldsToRemove);
+        if (!$this->user->hasPermission([
+            'peterhegman.slickslider.manage_slide_shows'
+        ]) && !$isSuperUser) {
+            foreach ($fieldsToRemove as $fieldToRemove) {
+                $form->removeField($fieldToRemove->fieldName);
+            }
+        }
+    }
 
     public function __construct()
     {

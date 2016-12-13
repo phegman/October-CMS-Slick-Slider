@@ -32,7 +32,37 @@ class Plugin extends PluginBase
         }
     }
 
+    public function registerPermissions()
+    {
+        return [
+            'peterhegman.slickslider.manage_slide_shows' => [
+                'label' => 'peterhegman.slickslider::lang.slickslider.manage_slide_shows',
+                'tab' => 'peterhegman.slickslider::lang.plugin.name'
+            ],
+            'peterhegman.slickslider.manage_slides' => [
+                'label' => 'peterhegman.slickslider::lang.slickslider.manage_slides',
+                'tab' => 'peterhegman.slickslider::lang.plugin.name'
+            ],
+            'peterhegman.slickslider.create_slide_shows' => [
+                'tab' => 'peterhegman.slickslider::lang.plugin.name',
+                'label' => 'peterhegman.slickslider::lang.slickslider.create_slide_shows_label'
+            ]
+        ];
+    }
+
     public function registerSettings()
     {
+        return [
+            'settings' => [
+                'label'       => 'Slide Show Settings',
+                'description' => 'Manage default slide show settings. These settings will only be used when a user that doesn\'t have access to the settings page creates a slide show',
+                'category'    => 'Slide Shows',
+                'icon'        => 'icon-cog',
+                'class'       => 'peterhegman\slickslider\Models\Settings',
+                'order'       => 500,
+                'keywords'    => 'slide show settings',
+                'permissions' => ['peterhegman.slickslider.manage_slide_shows']
+            ]
+        ];
     }
 }
