@@ -33,5 +33,5 @@
 1.0.12:
     - 'Updated table peterhegman_slickslider_slide_shows. Added slide link feature. Added option to include or not include jQuery. Added horizontal image position option'
     - builder_table_update_peterhegman_slickslider_slide_shows_10.php
-1.0.13
+1.0.13:
     - 'New permissions added allowing administrators to prevent users from editing settings of slide shows or adding and deleting slide shows. Global settings added.'
