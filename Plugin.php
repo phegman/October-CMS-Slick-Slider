@@ -11,6 +11,12 @@ class Plugin extends PluginBase
             'PeterHegman\SlickSlider\Components\Slider' => 'slider'
         ];
     }
+    public function registerPageSnippets()
+    {
+        return [
+            'PeterHegman\SlickSlider\Components\Slider' => 'slider'
+        ];        
+    }   
 
     public function registerMarkupTags()
     {
