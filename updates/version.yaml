@@ -37,3 +37,5 @@
     - 'New permissions added allowing administrators to prevent users from editing settings of slide shows or adding and deleting slide shows. Global settings added.'
 1.0.14:
     - 'Update makes it possible to include the slider component within the static-pages plugin by Rainlab'
+1.1.1:
+    - 'Updating `json` columns to `text` to fix error for users using MySQL below 5.7'

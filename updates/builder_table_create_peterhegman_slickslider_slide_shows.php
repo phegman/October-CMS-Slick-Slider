@@ -12,7 +12,7 @@ class BuilderTableCreatePeterhegmanSlicksliderSlideShows extends Migration
             $table->engine = 'InnoDB';
             $table->increments('id');
             $table->string('slide_show_title')->nullable();
-            $table->json('slide_show_content')->nullable();
+            $table->text('slide_show_content')->nullable();
         });
     }
     

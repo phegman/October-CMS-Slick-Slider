@@ -17,7 +17,7 @@ class BuilderTableUpdatePeterhegmanSlicksliderSlideShows9 extends Migration
     {
         Schema::table('peterhegman_slickslider_slide_shows', function($table)
         {
-            $table->integer('slide_show_height')->nullable()->unsigned(false)->default(null)->change();
+
         });
     }
 }

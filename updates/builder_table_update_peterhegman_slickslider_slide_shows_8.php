@@ -17,7 +17,7 @@ class BuilderTableUpdatePeterhegmanSlicksliderSlideShows8 extends Migration
     {
         Schema::table('peterhegman_slickslider_slide_shows', function($table)
         {
-            $table->integer('center_padding')->nullable()->unsigned(false)->default(null)->change();
+
         });
     }
 }

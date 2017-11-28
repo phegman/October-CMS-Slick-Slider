@@ -23,6 +23,19 @@ class SlideShows extends Model
     public $customMessages = [
     ];
 
+    /*
+     * Disable timestamps by default.
+     * Remove this line if timestamps are defined in the database table.
+     */
+    public $timestamps = false;
+
+    /**
+     * @var string The database table used by the model.
+     */
+    public $table = 'peterhegman_slickslider_slide_shows';
+
+    protected $jsonable = ['slide_show_content', 'responsive'];
+
     public function afterValidate()
     {
         $numeric_fields = [
@@ -145,17 +158,4 @@ class SlideShows extends Model
             }
         }
     }
-
-    /*
-     * Disable timestamps by default.
-     * Remove this line if timestamps are defined in the database table.
-     */
-    public $timestamps = false;
-
-    /**
-     * @var string The database table used by the model.
-     */
-    public $table = 'peterhegman_slickslider_slide_shows';
-
-    protected $jsonable = ['slide_show_content', 'responsive'];
 }

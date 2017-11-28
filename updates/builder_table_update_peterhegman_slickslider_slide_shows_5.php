@@ -22,7 +22,7 @@ class BuilderTableUpdatePeterhegmanSlicksliderSlideShows5 extends Migration
             $table->boolean('pause_on_focus')->nullable();
             $table->boolean('pause_on_hover')->nullable();
             $table->boolean('pause_on_dots_hover')->nullable();
-            $table->json('responsive')->nullable();
+            $table->text('responsive')->nullable();
             $table->integer('rows')->nullable();
             $table->integer('slides_per_row')->nullable();
             $table->integer('slides_to_show')->nullable();
