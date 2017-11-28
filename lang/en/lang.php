@@ -1,18 +1,18 @@
 <?php return [
     'plugin' => [
         'name' => 'Slick Slider',
-        'description' => 'Easily create responsive slide shows from the backend and insert them as a component.',
+        'description' => 'Easily create responsive slideshows from the backend and insert them as a component.',
     ],
     'slickslider' => [
-        'title' => 'Slide Show Title',
+        'title' => 'Slideshow Title',
         'slides' => 'Slides',
         'image' => 'Image',
         'slide_title' => 'Slide Title',
         'slide_description' => 'Slide Description',
         'manage_slide_shows' => 'User can manage all aspects of the slide show (slides and settings)',
-        'slide_shows' => 'Slide Shows',
+        'slide_shows' => 'Slideshows',
         'settings' => 'Settings',
-        'slide_show_height' => 'Slide Show Height',
+        'slide_show_height' => 'Slideshow Height',
         'autoplay' => 'Auto Play',
         'slide_image' => 'Slide Image',
         'accessibility' => 'Accessibility',
@@ -110,6 +110,6 @@
         'image_horizontal_position' => 'Image Horizontal Position',
         'manage_slides' => 'User can only manage the slides, not the settings',
         'create_slide_shows' => 'Create Slide Shows',
-        'create_slide_shows_label' => 'User can create and delete slide shows',
+        'create_slide_shows_label' => 'User can create and delete slideshows',
     ],
 ];
