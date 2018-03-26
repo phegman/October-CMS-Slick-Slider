@@ -1,5 +1,4 @@
-	
-{% if slider.slides.slideShows != 'no_slider' %}
+{% if not(slider.slides.slideShows is same as ('no_slider')) %}
 {% put scripts %}
     <script>
 		$(document).ready(function(){

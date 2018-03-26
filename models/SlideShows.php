@@ -35,6 +35,14 @@ class SlideShows extends Model
     public $table = 'peterhegman_slickslider_slide_shows';
 
     protected $jsonable = ['slide_show_content', 'responsive'];
+    /**
+      * Softly implement the TranslatableModel behavior.
+      */
+    public $implement = ['@RainLab.Translate.Behaviors.TranslatableModel'];
+    /*
+     * @var array Attributes that support translation, if available.
+     */
+    public $translatable = ['slide_show_content'];
 
     public function afterValidate()
     {
@@ -147,14 +155,12 @@ class SlideShows extends Model
                 foreach ($defaultValues as $key => $defaultValue) {
                     $this->$key = $defaultValue;
                 }
-                Log::debug('empty');
             } else {
                 foreach ($defaultFields as $key => $defaultField) {
                     if (!in_array($key, $notFields)) {
                         $this->$key = $defaultField;
                     }
                 }
-                Log::debug('not empty');
             }
         }
     }
