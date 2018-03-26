@@ -12,7 +12,7 @@ class Slider extends \Cms\Classes\ComponentBase
         if (count($slideShows) > 0) {
             return [
                 'name' => 'Slider',
-                'description' => 'Displays a slider choosen from the dropdown'
+                'description' => 'Displays a slider chosen from the dropdown'
             ];
         } else {
             return [
@@ -49,7 +49,7 @@ class Slider extends \Cms\Classes\ComponentBase
     {
         $slideShowId = $this->property('slide_show_id');
         $slideShows = SlideShows::where('id', '=', $slideShowId)->first();
-        if (count($slideShows) > 0 && $slideShows->attributes['include_jquery']) {
+        if ($slideShows !== null && $slideShows->attributes['include_jquery']) {
             $this->addJs('assets/jquery-3.1.1.min.js');
         }
         $this->addJs('assets/slick/slick.min.js');
@@ -62,7 +62,7 @@ class Slider extends \Cms\Classes\ComponentBase
     {
         $slideShowId = $this->property('slide_show_id');
         $slideShows = SlideShows::where('id', '=', $slideShowId)->first();
-        if (count($slideShows) > 0) {
+        if ($slideShows !== null) {
             $breakpoints = json_decode($slideShows->attributes['responsive']);
             //Create Responsive Array
             $breakpointArray = array();
