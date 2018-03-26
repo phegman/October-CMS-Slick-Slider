@@ -39,3 +39,5 @@
     - 'Update makes it possible to include the slider component within the static-pages plugin by Rainlab'
 1.1.1:
     - 'Updating `json` columns to `text` to fix error for users using MySQL below 5.7'
+1.1.2:
+    - 'Adding support for rainlab.translate. Thanks to Tony Raoul. Fixed error when updating to PHP 7.2'
