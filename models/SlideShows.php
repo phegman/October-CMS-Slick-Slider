@@ -155,14 +155,12 @@ class SlideShows extends Model
                 foreach ($defaultValues as $key => $defaultValue) {
                     $this->$key = $defaultValue;
                 }
-                Log::debug('empty');
             } else {
                 foreach ($defaultFields as $key => $defaultField) {
                     if (!in_array($key, $notFields)) {
                         $this->$key = $defaultField;
                     }
                 }
-                Log::debug('not empty');
             }
         }
     }
