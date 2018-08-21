@@ -1,4 +1,4 @@
-<?php namespace peterhegman\slickslider\Models;
+<?php namespace PeterHegman\SlickSlider\Models;
 
 use Model;
 
@@ -6,7 +6,7 @@ class Settings extends Model
 {
     public $implement = ['System.Behaviors.SettingsModel'];
 
-    // A unique code
+    // Unique code
     public $settingsCode = 'slick_slider_settings';
 
     // Reference to field configuration
