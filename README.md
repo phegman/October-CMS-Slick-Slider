@@ -1,3 +1,6 @@
+# Notice
+Looking for maintainers
+
 # October CMS Slick Slider Plugin
 
 * [Installation](#installation)
